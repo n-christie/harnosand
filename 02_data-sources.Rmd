@@ -24,18 +24,18 @@ More information on the registers used in the study is provided below.
 - **Swedish Name**: [Swedish name]
 - **Description**: Sex; birth date; civil status (duration, dates, changes); address (dates, changes); income; country of origin; citizenship; in-/emigration (dates); number of people in the dwelling; housing tenure; socioeconomic indicators of the neighborhoods (on postal code, municipal levels)
 - **Time Period**: 1968
-- **Key Variables**:
-  - Sex
-  - Birth date
-  - Civil status (duration, dates, changes)
-  - Address (dates, changes)
-  - Income
-  - Country of origin
-  - Citizenship
-  - Immigration and emigration dates
-  - Number of people in the dwelling
-  - Housing tenure
-  - Socioeconomic indicators of neighborhoods
+<!-- - **Key Variables**: -->
+<!--   - Sex -->
+<!--   - Birth date -->
+<!--   - Civil status (duration, dates, changes) -->
+<!--   - Address (dates, changes) -->
+<!--   - Income -->
+<!--   - Country of origin -->
+<!--   - Citizenship -->
+<!--   - Immigration and emigration dates -->
+<!--   - Number of people in the dwelling -->
+<!--   - Housing tenure -->
+<!--   - Socioeconomic indicators of neighborhoods -->
 - **Data Provider**: Statistics Sweden
 - **Link**: [Link to register details](https://example.com)
 
@@ -47,9 +47,9 @@ More information on the registers used in the study is provided below.
 - **Description**: The Patient Register provides the basis for statistics on diseases and treatments in Swedish specialized care. Data from the Register are used to generate statistics on, for example, compulsory psychiatric care, injuries and poisonings as well as waiting times in emergency departments.
 
 - **Time Period**: 1987-2020
-- **Key Variables**:
-  - Total number of hospitalizations per month
-  - In-patient health outcomes (ICD-10 chapters such as falls, fractures, stroke, etc.)
+<!-- - **Key Variables**: -->
+<!--   - Total number of hospitalizations per month -->
+<!--   - In-patient health outcomes (ICD-10 chapters such as falls, fractures, stroke, etc.) -->
 - **Data Provider**: Socialstyrelsen
 - **Link**: [Link to register details](https://www.socialstyrelsen.se/statistik-och-data/register/patientregistret/)
 
@@ -60,16 +60,16 @@ More information on the registers used in the study is provided below.
 - **Swedish Name**: [Swedish name]
 - **Description**: Objective housing characteristics for each dwelling: type of dwelling; price of dwelling; type of tenure; size; presence of stairs/elevator; floor; building and construction year; characteristics of the neighborhood: communal facilities (e.g., roads), green areas; date of each relocation
 - **Time Period**: 1908
-- **Key Variables**:
-  - Type of dwelling
-  - Price of dwelling
-  - Type of tenure
-  - Size
-  - Presence of stairs/elevator
-  - Floor
-  - Building and construction year
-  - Neighborhood characteristics (communal facilities, green areas)
-  - Date of each relocation
+<!-- - **Key Variables**: -->
+<!--   - Type of dwelling -->
+<!--   - Price of dwelling -->
+<!--   - Type of tenure -->
+<!--   - Size -->
+<!--   - Presence of stairs/elevator -->
+<!--   - Floor -->
+<!--   - Building and construction year -->
+<!--   - Neighborhood characteristics (communal facilities, green areas) -->
+<!--   - Date of each relocation -->
 - **Data Provider**: Swedish Mapping, Cadastral, and Land Registration Authority
 - **Link**: [Link to register details](https://example.com)
 
@@ -80,9 +80,9 @@ More information on the registers used in the study is provided below.
 - **Swedish Name**: [Swedish name]
 - **Description**: DESO (demographical statistical unit); coordinates of the housing and address, etc.
 - **Time Period**: 1952
-- **Key Variables**:
-  - DESO (demographic statistical unit)
-  - Coordinates of the housing and address
+<!-- - **Key Variables**: -->
+<!--   - DESO (demographic statistical unit) -->
+<!--   - Coordinates of the housing and address -->
 - **Data Provider**: Statistics Sweden
 - **Link**: [Link to register details](https://example.com)
 
@@ -94,9 +94,9 @@ More information on the registers used in the study is provided below.
 - **Description**: The National Cause of Death Register provides the basis for official cause-of-death statistics in Sweden. The Register's data are also used to describe the health of the population, as a basis for health care interventions and for research.
 
 - **Time Period**: 1990-2020
-- **Key Variables**:
-  - Death cause
-  - Date of death
+<!-- - **Key Variables**: -->
+<!--   - Death cause -->
+<!--   - Date of death -->
 - **Data Provider**: Socialstyrelsen
 - **Link**: [Link to register details](https://www.socialstyrelsen.se/statistik-och-data/register/dodsorsaksregistret/)
 
@@ -107,10 +107,10 @@ More information on the registers used in the study is provided below.
 - **Swedish Name**: [Swedish name]
 - **Description**: Education level, income, social insurance
 - **Time Period**: 1990
-- **Key Variables**:
-  - Education level
-  - Income
-  - Social insurance
+<!-- - **Key Variables**: -->
+<!--   - Education level -->
+<!--   - Income -->
+<!--   - Social insurance -->
 - **Data Provider**: Statistics Sweden
 - **Link**: [Link to register details](https://example.com)
 
@@ -121,10 +121,10 @@ More information on the registers used in the study is provided below.
 - **Swedish Name**: [Swedish name]
 - **Description**: Drug prescriptions for chronic illnesses (ATC code, dose, and date): endocrine; cardiovascular; hepatic; renal or neurological/neuromuscular
 - **Time Period**: 2005
-- **Key Variables**:
-  - ATC code
-  - Dose
-  - Prescription date
+<!-- - **Key Variables**: -->
+<!--   - ATC code -->
+<!--   - Dose -->
+<!--   - Prescription date -->
 - **Data Provider**: National Board of Health and Welfare
 - **Link**: [Link to register details](https://example.com)
 
@@ -135,9 +135,9 @@ More information on the registers used in the study is provided below.
 - **Swedish Name**: [Swedish name]
 - **Description**: Intensive care for laboratory-confirmed influenza and (since 2020) COVID-19.
 - **Time Period**: 2001
-- **Key Variables**:
-  - Intensive care for laboratory-confirmed influenza
-  - Intensive care for COVID-19 (since 2020)
+<!-- - **Key Variables**: -->
+<!--   - Intensive care for laboratory-confirmed influenza -->
+<!--   - Intensive care for COVID-19 (since 2020) -->
 - **Data Provider**: Swedish Intensive Care Registry
 - **Link**: [Link to register details](https://example.com)
 
@@ -148,9 +148,9 @@ More information on the registers used in the study is provided below.
 - **Swedish Name**: [Swedish name]
 - **Description**: Laboratory-confirmed influenza and (since 2020) COVID-19
 - **Time Period**: 1997 and since 2004 for COVID-19
-- **Key Variables**:
-  - Laboratory-confirmed influenza
-  - Laboratory-confirmed COVID-19 (since 2020)
+<!-- - **Key Variables**: -->
+<!--   - Laboratory-confirmed influenza -->
+<!--   - Laboratory-confirmed COVID-19 (since 2020) -->
 - **Data Provider**: Public Health Agency of Sweden
 - **Link**: [Link to register details](https://example.com)
 
@@ -163,9 +163,9 @@ More information on the registers used in the study is provided below.
 Until 2018, the Register included only information on persons who have received any intervention in the municipal health care system, broken down per calendar month. From 2019, the Register is supplemented by information on which patient-related procedures were carried out by authorized staff with the municipality as the care provider. Procedures are classified at the most detailed level of the Classification of Health Care Procedures (KVÅ). In addition, municipalities provide information regarding the date on which the procedure was performed and by which authorised professional group. From 2019 onwards, all data are provided to the Register on a monthly basis.
 Home help and service type and number of hours/month/year: escorting, replace the relative, personal care, meal delivery, security alarm, daytime activities; short-term vs. long-term.
 - **Time Period**: 2007-2020
-- **Key Variables**:
-  - Care received
-  - Date of care
+<!-- - **Key Variables**: -->
+<!--   - Care received -->
+<!--   - Date of care -->
 - **Data Provider**: Socialstyrelsen
 - **Link**: [Link to register details](https://www.socialstyrelsen.se/statistik-och-data/register/kommunal-halso-och-sjukvard/)
 
@@ -177,12 +177,12 @@ Home help and service type and number of hours/month/year: escorting, replace th
 - **Description**: The Register covers the elderly and persons with physical, mental or intellectual impairments who receive municipal care under the Social Services Act. The Register contains data on about 400,000 people per data collection. It only concerns decisions that have been implemented (previously, all decisions made were included, but this was changed in 2012). The Register does not contain information on the number of registered places in nursing homes.
 
 - **Time Period**: 2007-2020
-- **Key Variables**:
-  - Home help and service type
-  - Hours of care per month/year
-  - types of care: escorting, replace the relative, personal care, meal delivery, security alarm, daytime activities.
-  - Short-term vs. long-term care
-  
+<!-- - **Key Variables**: -->
+<!--   - Home help and service type -->
+<!--   - Hours of care per month/year -->
+<!--   - types of care: escorting, replace the relative, personal care, meal delivery, security alarm, daytime activities. -->
+<!--   - Short-term vs. long-term care -->
+
 - **Data Provider**: Socialstyrelsen
 
 - **Link**: [Link to register details](https://www.socialstyrelsen.se/statistik-och-data/register/aldre-och-personer-med-funktionsnedsattning/)
@@ -194,11 +194,11 @@ Home help and service type and number of hours/month/year: escorting, replace th
 - **Swedish Name**: [Swedish name]
 - **Description**: Dwelling type; number of rooms; dwelling unit size; kitchen type
 - **Time Period**: 2012
-- **Key Variables**:
-  - Dwelling type
-  - Number of rooms
-  - Dwelling unit size
-  - Kitchen type
+<!-- - **Key Variables**: -->
+<!--   - Dwelling type -->
+<!--   - Number of rooms -->
+<!--   - Dwelling unit size -->
+<!--   - Kitchen type -->
 - **Data Provider**: Swedish National Board of Housing, Building and Planning
 - **Link**: [Link to register details](https://example.com)
 
@@ -206,6 +206,16 @@ Home help and service type and number of hours/month/year: escorting, replace th
 # Data Sources - Kolada
 
 ## Description
+
+
+
+The Council for the Promotion of Municipal Analysis, RKA, is a non-profit association formed in cooperation between the state and the Swedish Association of Local Authorities and Regions, SKR. Our mission is to facilitate the follow-up and analysis of different activities in municipalities and regions by providing statistics in a database - Kolada.
+
+Kolada is an open and free database that gives you the best opportunities for comparisons and analysis in the local government sector. The database contains more than 6 000 key ratios, i.e. measures that are suitable for comparisons. The different tools help you analyze and visualize results.
+
+## Data accessablity
+
+Via webtool or use of their API with, for example, R
 
 ## Finding similar kommuns
 
