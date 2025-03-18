@@ -8,13 +8,12 @@ book_author: "Nick Christie"
 rmd_files:
   - index.Rmd                # Homepage
   - 01_about.Rmd                # Project Overview
-  # - 01_data-sources.Rmd         # Data Sources and Provenance
-  # - data-integration.Rmd     # Data Integration and Linkage
-  - 02_data-sources.Rmd      # Data Processing and Quality Control
-  - 03_variable-dictionary.Rmd  # Variable Dictionary
-  - 04_survey.Rmd    # Variable Creation and Transformations
-  # - 05_survey.Rmd     # Exploratory Data Summaries
-  # - resources.Rmd            # Data Access and Resources
+  - 02_harnosand.Rmd     # Exploratory Data Summaries
+  - 03_comp-kommuner.Rmd            # Data Access and Resources
+  - 04_data-sources.Rmd      # Data Processing and Quality Control
+  - 05_variable-dictionary.Rmd  # Variable Dictionary
+  - 06_survey.Rmd    # Variable Creation and Transformations
+
   # - glossary.Rmd             # Glossary and FAQ
   # - appendix.Rmd
   # - changelog.Rmd            # Version History
