@@ -25,10 +25,7 @@ Kolada's data is extensive and I would argue is a superior source to identify co
 
 I have created a tool to identify comparable municipalities based on a few hand-chosen metrics.  Other metrics can be added - let me know and I can add them to the tool. It can be found below (may be slow to load), or accessed directly at https://nickchristie.shinyapps.io/harnosand/ :
 
-```{r echo=FALSE}
-knitr::include_app("https://nickchristie.shinyapps.io/harnosand/",
-  height = "800px")
-```
+<iframe src="https://nickchristie.shinyapps.io/harnosand/?showcase=0" width="672" height="800px" data-external="1"></iframe>
 
 
 
