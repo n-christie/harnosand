@@ -69,3 +69,104 @@ If we identify the exact metric numbers from Kolada, we can pull the data and fi
 
 
 ![](images/harnosand_comps.png)
+
+## Propensity score matching
+
+A stronger method for the identification of comparable municipalities could be the use of propensity score matching.
+PSM is a statistical technique used to reduce bias by matching units — in this case, municipalities — that have a similar likelihood of receiving the treatment (i.e., participating in the Härnösand program), based on observed characteristics.
+
+In this approach, a logistic regression model is used to estimate each municipality’s __propensity score__ — the probability of receiving the intervention — using relevant pre-treatment covariates.
+These may include variables from Kolada such as the ones above.
+
+Once scores are estimated, the treated municipality (Härnösand) is matched to the most similar municipalities based on these scores. 
+
+PSM complements the other approaches outlined above and offers a transparent, data-driven method for choosing comparison municipalities, which offers a structured methodological approach that may reduce subjectivity concerns.
+
+### Criteria for Selecting Variables for Propensity Score Matching
+
+- **Pre-treatment only**  
+  Use variables measured *before* the intervention began. Avoid any indicators that could be influenced by the treatment itself.
+
+- **Predictors of treatment assignment**  
+  Include variables that are likely related to why a municipality received the intervention (e.g., existing care levels, demographics).
+
+- **Predictors of the outcome**  
+  Select variables that are also related to your outcome of interest (e.g., care home use), to control for potential confounding.
+
+- **Not consequences of the treatment**  
+  Do not include variables that might be affected by the treatment, as this can introduce bias.
+
+- **Not perfectly collinear**  
+  Avoid including variables that are highly correlated with each other, which can cause instability in the propensity score model.
+
+- **Relevant to policy or selection context**  
+  Include variables that reflect known criteria or conditions that may have influenced the decision to assign treatment.
+
+- **Sufficiently variable across units**  
+  Use variables that show meaningful variation across municipalities to improve the ability to distinguish treated from untreated units.
+  
+
+### Steps for Conducting Propensity Score Matching 
+
+- **1. Define the treatment and units of analysis**  
+  Clearly specify which municipality is treated and which are potential controls. The unit of analysis should be municipalities, since the treatment is assigned at that level.
+
+- **2. Select relevant covariates**  
+  Choose pre-treatment variables that are related to both the likelihood of receiving the treatment and the outcomes of interest. Use sources from Kolada to ensure transparency and comparability.
+
+- **3. Estimate propensity scores**  
+  Run a logistic regression model where the dependent variable is treatment status (1 = treated, 0 = control), and the independent variables are the selected covariates. The output is a predicted probability (propensity score) for each municipality.
+
+- **4. Match treated and control units**  
+  Match the treated municipality to one or more control municipalities with similar propensity scores. Use methods like nearest-neighbor matching, caliper matching, or Mahalanobis distance as appropriate.
+
+- **5. Check covariate balance**  
+  After matching, assess whether the treated and control municipalities are similar in their covariates. Use standardized mean differences, summary tables, or visual plots to check balance.
+
+- **6. Conduct outcome analysis**  
+  Compare outcomes between the treated and matched control municipalities. This can be done directly or using methods such as Difference-in-Differences if pre/post data is available.
+
+- **7. Conduct sensitivity checks**  
+  Test the robustness of your results using alternative matching methods or specifications. Consider exploring how unmeasured confounding might affect your findings.
+  
+### Example Code for Propensity Score Matching in Stata
+
+```stata
+* Step 1: Load your dataset
+use "municipality_data.dta", clear
+
+* Step 2: Create the treatment variable
+* Example: 1 = Härnösand (treated), 0 = other municipalities
+gen treated = (municipality == "Härnösand")
+
+* Step 3: Estimate propensity scores using logistic regression
+logit treated elderly_pct homecare_pct spending_per_capita satisfaction_score
+predict pscore, pr
+
+* Step 4: Perform nearest-neighbor matching
+* Install psmatch2 if not already installed
+ssc install psmatch2, replace
+
+* Match using 1-to-3 nearest neighbors with a caliper
+psmatch2 treated (pscore) (elderly_pct homecare_pct spending_per_capita satisfaction_score), neighbor(3) caliper(0.05) logit
+
+* Step 5: Check covariate balance after matching
+pstest elderly_pct homecare_pct spending_per_capita satisfaction_score, graph
+
+* Step 6: Analyze the outcome (e.g., % in care homes) using matched data
+* Outcome variable: carehome_pct
+
+* Keep only matched observations
+gen matched = _weight > 0
+keep if matched
+
+* Run weighted regression
+reg carehome_pct treated [aw=_weight]
+
+* Step 7 (optional): Use Difference-in-Differences if you have pre/post data
+gen treated_post = treated * post
+reg carehome_pct treated post treated_post [aw=_weight]
+```
+
+
+

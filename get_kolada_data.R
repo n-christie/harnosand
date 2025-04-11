@@ -29,7 +29,8 @@ grp_data <- get_values(
 
 # Get KPIs describing Gross Regional Product of municipalities
 kpi_filter <- get_kpi() %>% 
-  kpi_search(c("N21700","N21704","N20891","U21468")) %>%
+  kpi_search(c("65+")) %>% 
+  #kpi_search(c("N21700","N21704","N20891","U21468")) %>%
   kpi_search("K", column = "municipality_type")
 
 munic_grp_filter <- get_municipality_groups() %>% 
@@ -38,13 +39,18 @@ munic_grp_filter <- get_municipality_groups() %>%
 Härnösand <- get_municipality() %>% municipality_search("Härnösand")
 
 kom_list <- get_municipality() %>% municipality_search(c("Avesta", "Ludvika", "Ronneby" , "Karlskoga","Härnösand"))
+
+kom_list_a <- get_municipality()
+
 # Get data
 grp_data <- get_values(
   kpi = kpi_extract_ids(kpi_filter),
   municipality = c(
 
-    municipality_extract_ids(kom_list)
-  )
+    municipality_extract_ids(kom_list_a)
+  ),
+  
+  period = 2022:2024
 )
 
 
